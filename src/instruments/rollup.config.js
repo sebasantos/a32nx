@@ -62,6 +62,7 @@ module.exports = fs.readdirSync(`${__dirname}/src`, { withFileTypes: true })
                     plugins: [
                         '@babel/plugin-proposal-class-properties',
                         ['@babel/plugin-transform-runtime', { regenerator: true }],
+                        '@babel/plugin-proposal-object-rest-spread',
                     ],
                     babelHelpers: 'runtime',
                     compact: false,
