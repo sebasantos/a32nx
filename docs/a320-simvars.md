@@ -32,7 +32,7 @@
 - A32NX_REPORTED_BRAKE_TEMPERATURE_{1,2,3,4}
     - celsius
     - represents the reported brake temperature of the rear wheels by the sensor.
-    - It can be different from the brake temperature when the brake fan has been used, because the brake fan will cool the sensor more than the brakes 
+    - It can be different from the brake temperature when the brake fan has been used, because the brake fan will cool the sensor more than the brakes
 	- (which have much more energy to dissipate) therefore giving potentially erroneous readings that the pilots must take into account
 - A32NX_BRAKE_FAN
 	- boolean
@@ -314,7 +314,6 @@
     - Number
     - Green Dot speed (clean config or O)
     - is mach corrected
-
 
 - A32NX_VSPEEDS_LANDING_CONF3
     - Bool
@@ -653,3 +652,11 @@
     - {number}
         - 1
         - 2
+
+- A32NX_SIDESTICK_POSITION_X
+    - Number
+    - Provides the direct sidestick position (lateral)
+
+- A32NX_SIDESTICK_POSITION_Y
+    - Number
+    - Provides the direct sidestick position (longitudinal)
