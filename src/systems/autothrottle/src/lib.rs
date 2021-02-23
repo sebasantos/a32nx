@@ -62,7 +62,7 @@ fn nudge(t: &mut f64, d: f64) {
 
 type MSFSResult = Result<(), Box<dyn std::error::Error>>;
 
-#[msfs::gauge(name=AutoThrottle)]
+#[msfs::gauge(name=autothrottle)]
 async fn athr(mut gauge: msfs::Gauge) -> MSFSResult {
     let mut sim = gauge.open_simconnect("ATHR")?;
     let mut athr = athr::AutoThrottle::new();

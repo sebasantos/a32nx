@@ -13,7 +13,7 @@ use sim_connect::SimData;
 
 type MSFSResult = Result<(), Box<dyn std::error::Error>>;
 
-#[msfs::gauge(name=FlyByWire)]
+#[msfs::gauge(name=fbw)]
 async fn fbw(mut gauge: msfs::Gauge) -> MSFSResult {
     let mut interface = interface::Interface::new(gauge.open_simconnect("FBW")?);
 
