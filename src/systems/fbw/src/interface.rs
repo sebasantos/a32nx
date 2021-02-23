@@ -42,6 +42,14 @@ impl<'a> Interface<'a> {
         }
     }
 
+    pub(crate) fn initialize(
+        &mut self
+    ) {
+        self.ap_sm.initialize();
+        self.ap_laws.initialize();
+        self.fbw.initialize();
+    }
+
     pub(crate) fn update(
         &mut self,
         sample_time: Duration,

@@ -24,6 +24,13 @@ macro_rules! wrapper {
 
             impl $name {
                 #[inline]
+                pub(crate) fn initialize(&mut self) {
+                    unsafe {
+                        self.0.initialize();
+                    }
+                }
+
+                #[inline]
                 pub(crate) fn step(&mut self) {
                     unsafe {
                         self.0.step();

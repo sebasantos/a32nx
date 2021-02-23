@@ -150,6 +150,8 @@ async fn fbw(mut gauge: msfs::Gauge) -> MSFSResult {
         (fcu_appr_push, "A32NX.FCU_APPR_PUSH", false),
     );
 
+    interface.initialize();
+
     let mut t = std::time::Instant::now();
     let mut last_sim_time = 0.0;
     while let Some(event) = gauge.next_event().await {
